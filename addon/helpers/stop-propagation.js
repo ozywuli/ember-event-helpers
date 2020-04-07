@@ -2,6 +2,7 @@ import { helper } from '@ember/component/helper';
 import { assert } from '@ember/debug';
 
 export function stopPropagation([handler]) {
+  console.log('test');
   assert(
     `Expected '${handler}' to be a function, if present.`,
     !handler || typeof handler === 'function'
